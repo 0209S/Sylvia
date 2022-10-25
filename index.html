@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRAINDOM</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #eee;
+    }
+    .flex {
+      display: flex;
+    }
+    .shadow {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .white {
+      background-color: white;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .margin {
+      margin: 8px;
+    }
+    .marginR {
+      margin-right: 8px;
+    }
+    .marginT {
+      margin-top: 8px;
+    }
+  </style>
+  <body class="flex"></body>
+  <!--侧边栏-->
+  <div style="width: 170px; z-index: 2" class="white shadow"></div>
+  <!--内容区-->
+  <div class="flex1 flex column">
+    <!--头部栏-->
+    <div
+      style="height: 70px; margin-left: 8px; z-index: 1"
+      class="white shadow"
+    ></div>
+    <!--内容区-->
+    <div class="flex1 flex" style="overflow-y: scroll">
+      <!--左区-->
+      <div style="flex: 3" class="flex column margin">
+        <!--数据区-->
+        <div class="flex" style="height: 100px">
+          <div style="height: 100px" class="flex1 white shadow marginR"></div>
+          <div style="height: 100px" class="flex1 white marginR shadow"></div>
+          <div style="height: 100px" class="flex1 white shadow"></div>
+        </div>
+        <!--列表区-->
+        <div class="flex column">
+          <!--列表项-->
+          <div style="height: 200px" class="white marginT shadow"></div>
+          <div style="height: 200px" class="white marginT shadow"></div>
+          <div style="height: 200px" class="white marginT shadow"></div>
+          <div style="height: 200px" class="white marginT shadow"></div>
+        </div>
+      </div>
+      <!--右区-->
+      <div style="flex: 1" class="flex column marginR marginT">
+        <!--提示区-->
+        <div style="height: 200px" class="white shadow marginT"></div>
+        <!--消息区-->
+        <div style="height: 150px" class="white shadow marginT"></div>
+      </div>
+    </div>
+  </div>
+</html>
